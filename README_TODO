@@ -1,0 +1,60 @@
+1. List of filters that are all anded to be applied
+1.5. Launch ncli pd ls-repl-status, Capture output get meta op ID, look for PD name
+     Launch allssh "cd data/logs;grep <filename> * --include stargate*;" Capture output
+     Parse out the IP address that responded with anything
+1.6 Filter, apply contains(col_name,streing);
+
+2. JOIN operator
+     i. Change mop_history table to be map<string,map<string,vector<string>>>
+        Change completed_mop to this as well, 
+   --mop_history, --completed_mop --join_type=simple, left, right 
+DONE 3. READ multiple cerebro.* files or all cerebro files in folder non zipped
+DONE 4. Cross reference stargate logs for files
+DONE     allssh grep file name and count returned number of lines for each IP address, Guess that the IP that is replicating by number of grep hits
+5. PARSE ReceiveMetaop
+   ChangeMode
+   ChangeStretchMode
+6. CrashLoop? Which meta op to kill to get out of loop
+
+7. FILTER type LESS_THAN< GREATER_THAN,
+==================================================
+To do
+1. Time stamp filter
+2. Filter for Joins, Column list for Joins
+3. Multiple filters comma separated - Done
+4. Change completed meta op parser AddToMap to be like the rest - Done
+5. SCHEMA - return all attributes - Done
+6. HARDEN EVERYTHING
+7. Exception safety, crash safty null checks
+7.5. ONCALL 1179 - STUCK REPLICATION
+    FIND THE VDISK THAT IS STUCK - ON MASTER - MOP_HISTORY table find latest MOP that has NOT completed
+    FIND NODE THAT IS REPLICATING THE VDISK - Get VDISK ID, File names for ALL the replicating files, and related replicating node
+    FIND OUT IF THERE AREA ANY STARGATE ERRORS on THAT REPLICATING NODE- load ERRORs and FATALs on stargate on the replicAting node : remote not available yet
+
+8. JSON parser definition - Input should be a json file that has attrs like
+file type, File Name regex, Pattern that matches a line, attribute names that should be parsed out
+
+REMOTE SERVERS RUNNING ON ALL NODES
+MASTER node where the py client is,
+REMOTE JOIN, REMOTE Query
+
+OPTIMIZATION
+To be able to delete records fpr mem cap reasons
+MVCC model to be consistent in reading data
+Thread the loading?
+
+
+
+IDEALLY scenario
+Cerebro problem, crash loop something
+start servers 
+Run a query
+status() = Gets latest error
+Get PD for error
+Get snap for error
+Get OpCode for error
+Get Meta op Id to abort
+ABORT the meta op
+
+
+deduped in memory tables?

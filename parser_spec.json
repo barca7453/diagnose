@@ -1,0 +1,13 @@
+{
+   "COMPLETED_MOPS":
+   {
+      "regex": "Top level",
+      "capture_whole_message": "True",
+      "append_message": "False",
+      "attributes":
+      [
+         {"attr_name": "Meta opid", "attr_sep": "="},
+         {"attr_name": "Protection Domain", "attr_sep": "="}
+      ]
+   }
+}

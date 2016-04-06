@@ -1,0 +1,2 @@
+select a.snapshot_id, b.history from completd_metaops, mop_history where a.meta_opid = b.meta_opid
+

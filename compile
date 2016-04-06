@@ -1,0 +1,106 @@
+[  0%] [  0%] Built target zookeeper_jni_header
+Built target rpc_proto_cpp
+[  0%] [  0%] Built target pithos_proto
+Built target alerts_util
+[  9%] Built target cerebro_base_proto
+[  9%] Built target ngt_base_proto
+[  9%] Built target stats_type
+[  9%] Built target variable_map_exporter_proto
+[  9%] Built target secure_file_repository_proto
+[  9%] Built target extent_id_proto
+[  9%] [  9%] Built target cassandra_paxos_clock_proto
+Built target medusa_hash
+[  9%] Built target data_transformation_type_proto
+[  9%] [  9%] Built target util_base_java
+Built target cassandra_paxos_clock
+[  9%] Built target binary_log_proto_java
+[  9%] [  9%] [  9%] Built target variable_map_exporter_proto_java
+Built target rpc_proto_java
+Built target lock_client_proto_java
+[ 18%] [ 18%] Built target cassandra_sstable_metadata_proto_java
+Built target cassandra_health_warning_proto_java
+[ 18%] Built target cache_vdisk_tracker
+[ 18%] Built target cassandra_sstable_metadata_proto
+[ 18%] Built target iscsi_tracer
+[ 18%] Built target chronos_interface
+[ 18%] Built target mapreduce_info
+[ 18%] [ 18%] Built target cerebro_diagnose_proto_cpp
+Built target cerebro_diagnose_proto_py
+[ 18%] Built target OsUtil
+[ 18%] Built target util_thread_java
+[ 18%] Built target cassandra_proto_java
+[ 18%] Built target zookeeper_java
+[ 18%] Built target util_storage_java
+[ 18%] Built target util_net_java
+[ 18%] Built target zookeeper_mt
+[ 18%] Building Cassandra thrift /home/jayendra/work/main/cassandra/interface/thrift/thrift_defn_changed.txt
+[ 18%] Built target extent_id
+[ 27%] Built target util_base
+[ 27%] Built target util_qos
+[ 27%] Built target periodic_schedule
+[ 27%] Built target util_smb
+[ 27%] Built target util_stats
+[ 27%] Built target configuration_proto
+[ 36%] Built target util_thread
+[ 45%] Built target util_storage
+[ 54%] Built target util_net
+[ 54%] [ 54%] Built target acropolis_proto
+Built target ngt_guest_interface_proto
+[ 54%] [ 54%] Built target medusa_proto
+Built target genesis_interface
+[ 54%] Built target ngt_interface_proto
+[ 63%] [ 63%] Built target util_misc
+Built target curator_interface
+[ 63%] [ 63%] Built target stats_proto
+Built target nfs_inode_id
+[ 63%] Built target index_store_interface
+[ 63%] Built target cassandra
+[ 63%] Built target util_nfs
+[ 72%] Built target zeus
+[ 72%] Built target arithmos_interface
+[ 72%] Built target util_cassandra
+[ 72%] Built target cassandra_zeus_util
+[ 72%] Built target hyperint_proto
+[ 72%] Built target cassandra_token_util
+[ 72%] Built target pithos_base
+[ 72%] Built target ngt_base
+[ 72%] Built target hyperint_interface
+[ 72%] Built target curator_client_interface
+[ 72%] Built target pithos_client
+[ 72%] Built target mapreduce_common
+[ 90%] Built target cerebro_master_proto
+[ 90%] [ 90%] Built target pithos
+Built target stats_curator_proto
+[ 90%] Built target arithmos_base
+[ 90%] Built target stats_controller
+[ 90%] Built target content_cache
+[ 90%] Built target medusa_util
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+[ 90%] Built target cassandra_java
+[ 90%] Building Cassandra Test
+    [javac] /home/jayendra/work/main/cassandra/build.xml:647: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+BUILD SUCCESSFUL
+Total time: 1 second
+[ 90%] Built target cassandra_java_test
+[100%] Built target medusa
+[100%] Built target stargate_base
+[100%] Built target stargate_interface
+[100%] Built target cerebro_base
+[100%] Built target morphos_interface
+[100%] Built target cerebro_interface
+Scanning dependencies of target cerebro_diagnose
+[100%] [100%] [100%] Building CXX object cerebro/diagnose/CMakeFiles/cerebro_diagnose.dir/mop_history.cc.o
+Building CXX object cerebro/diagnose/CMakeFiles/cerebro_diagnose.dir/file_vdisk_metaop.cc.o
+[100%] Building CXX object cerebro/diagnose/CMakeFiles/cerebro_diagnose.dir/failfast_fatal.cc.o
+Building CXX object cerebro/diagnose/CMakeFiles/cerebro_diagnose.dir/stargate_trace.cc.o
+[100%] Building CXX object cerebro/diagnose/CMakeFiles/cerebro_diagnose.dir/file_vdisk.cc.o
+[100%] Building CXX object cerebro/diagnose/CMakeFiles/cerebro_diagnose.dir/completed_mop.cc.o
+[100%] Building CXX object cerebro/diagnose/CMakeFiles/cerebro_diagnose.dir/master_ip_timestamp.cc.o
+[100%] Building CXX object cerebro/diagnose/CMakeFiles/cerebro_diagnose.dir/infolog_parser.cc.o
+[100%] Building CXX object cerebro/diagnose/CMakeFiles/cerebro_diagnose.dir/file_parser.cc.o
+[100%] Building CXX object cerebro/diagnose/CMakeFiles/cerebro_diagnose.dir/cerebro_diagnose.cc.o
+Linking CXX executable cerebro_diagnose
+[100%] Built target cerebro_diagnose

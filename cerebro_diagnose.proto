@@ -1,0 +1,64 @@
+import "util/net/rpc.proto";
+option java_package = "com.nutanix.net.test";
+option java_outer_classname = "RpcTestProto";
+option cc_generic_services = true;
+option java_generic_services = true;
+option py_generic_services = true;
+
+package aa.bb.cc;
+
+message PrintEverythingArg {
+  required string filename = 1;
+}
+
+message PrintEverythingRet {
+  optional string str = 1;
+}
+
+message QueryTableArg {
+  required string tablename = 1;
+  optional string filterspec = 2;
+  optional string columnlist = 3;
+}
+
+message QueryTableRet {
+  optional string query_results = 1;
+}
+
+message JoinTableArg {
+  required string l_tablename = 1;
+  required string r_tablename = 2;
+  required string col_name = 3;
+  optional string filterspec = 4;
+  optional string columnlist = 5;
+}
+
+message JoinTableRet {
+  optional string join_results = 1;
+}
+
+
+service CerebroDiagnoseSvc {
+  option (nutanix.net.default_timeout_msecs) = -1;
+
+  rpc PrintEverything(PrintEverythingArg) returns(PrintEverythingRet) {
+  }
+
+  rpc QueryTable(QueryTableArg) returns(QueryTableRet) {
+  }
+
+  rpc JoinTable(JoinTableArg) returns(JoinTableRet) {
+  }
+
+}
+
+message CerebroDiagnoseErrorProto {
+  // Whenever a new error code is added below, the implementation of
+  // CerebroError::ToString() also needs to be changed.
+  enum Type {
+    kNoError = 0;
+    // The following is not a real error. It is just used to maintain a
+    // count of the error values.
+    kNumErrors = 200;
+  }
+}

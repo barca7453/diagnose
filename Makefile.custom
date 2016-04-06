@@ -1,0 +1,5 @@
+# release, opt, or dbg
+export BUILD_TYPE := opt
+export CLANG := 1
+export SHARED_LIBS := 1
+LOCALINC = "/usr/local/include"
